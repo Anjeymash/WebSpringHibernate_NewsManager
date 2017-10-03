@@ -21,7 +21,7 @@ private static final Logger log = LogManager.getRootLogger();
 //@Before("execution(* by.yandex.anjeymash.news.dao.impl.NewsDAOImpl.save(..))")
 public void logger(JoinPoint joinPoint) {
 	log.trace("***** Completed: " + joinPoint.getSignature().getName() + " *****");
-    //System.out.println("***** Completed: " + joinPoint.getSignature().getName() + " "+Arrays.toString(joinPoint.getArgs()));
+    System.out.println("***** Completed: " + joinPoint.getSignature().getName() + " "+Arrays.toString(joinPoint.getArgs()));
 	
 }
 }
